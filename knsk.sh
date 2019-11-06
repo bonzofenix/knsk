@@ -13,7 +13,7 @@
 set -u
 
 # Set variable for kubectl
-k=kubectl
+k=kubectl --insecure-skip-tls-verify
 
 # Test if kubectl is configured 
 $k cluster-info > /dev/null 2>&1
